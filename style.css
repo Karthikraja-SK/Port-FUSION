@@ -1,0 +1,210 @@
+body {
+    background:linear-gradient(to top, rgb(0, 37, 107), rgb(255, 0, 0));
+    font-family: Arial, sans-serif;
+}
+.navbar-brand {
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-nav .nav-link:hover {
+    background-color: rgb(88, 88, 88);
+    border-radius: 4px;
+}
+.navbar-collapse {
+    margin-left: 40px;
+}
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+.nav-item{
+    margin-left: 50px;
+}
+.nav-link{
+    color: white;
+}
+
+.spanclass{
+    color: orangered;
+}
+.section{
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 5px;
+    background-color: orangered;
+    color: white;
+}
+.btn:hover{
+    border: 1px solid white;
+}
+.slide1{
+    padding:50px 50px 50px 50px;
+    margin: 20px 50px 20px 50px;
+    width: auto;
+    height: 370px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;   
+}
+.slide1:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 60px 0px black;
+}
+.slide2:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 60px 0px black;
+}
+.slide3:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 60px 0px black;
+}
+.slide4:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 60px 0px black;
+}
+.slide5:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 60px 0px black;
+}
+.slide2{
+    display: block;
+    padding:50px 50px 30px 50px;
+    margin: 20px 50px 20px 50px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    color: white;
+    background-color:black;   
+}
+.slide2 span{
+    margin-left: 620px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.slide2 h2{
+    margin-left: 600px;
+    font-size: 25px;
+}
+.slide3{
+    padding:50px 50px 30px 50px;
+    margin: 20px 50px 20px 50px;
+    width: auto;
+    height: 350px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;   
+}
+#educationSection{
+    position: absolute;
+}
+
+#experienceSection{
+    padding-right: 50px;
+    margin-left: 800px;
+}
+
+#Download.btn:hover{
+    color: white;
+}
+
+.slide4{
+    padding:50px 50px 30px 50px;
+    margin: 20px 50px 20px 50px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: black;   
+}
+.slide4-div{
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#coursesSection{
+    padding-right: 500px;
+}
+#addpri{
+    margin-top: 18px;
+}
+.slide5{
+    padding:50px 50px 30px 50px;
+    margin: 20px 50px 20px 50px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: black;   
+}
+.b1,.b2{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    border: none;
+}
+#slide1 img{
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    margin-left: 700px;
+}
+#slide3 img{
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    margin-left: 400px;
+}
+#slide4 img{
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    margin-left: 700px;
+}
+#slide5 img{
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    margin-left: 700px;
+}
+#slide2 img{
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    margin-left: 30px;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+#slide5 .contact_me{
+    margin-left: 50px;
+}
+#slide5 .contact_me label{
+    font-weight: bolder;
+    font-size: 20px;
+}
+#slide5 .contact_me input{
+    margin-left: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+#slide5 .contact_me textarea{
+    width: 200px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);   
+}
+#download-pdf{
+    margin-left: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <style>
+        a{
+            color:rgb(250, 248, 248);
+        }
+        body{
+            /* background-image:url('https://www.shutterstock.com/shutterstock/photos/1658322442/display_1500/stock-vector-illustration-vector-of-ice-cream-cone-decorated-on-pink-cafe-with-white-frame-board-background-on-1658322442.jpg'); */
+            background-image:url('./bg-image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #divid{
+            margin-left: 150px;
+            margin-top: 100px;
+            width: 400px;
+            height: 380px;
+            border: 1px solid black;
+            border-radius:10px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        input{
+            padding-left: 20px;
+            width: 300px;
+            height: 30px;
+            border-radius: 7px;
+            margin-left: 50px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        ::placeholder{  
+            color: black;
+        }
+        #aid{
+            width: 80px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(217, 57, 52);
+            color:black;
+            text-decoration: none;
+            font-family: cursive;
+            padding-left: 15px;
+            padding-right: 0px;
+            margin-left: 145px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divid"><table>
+        <div><h1 style="margin-left: 140px;">Sign-up</h1></div>
+        <div><h3 style="margin-left: 120px;">Create an account</h3></div>
+        <tr>
+            <td><input type="username" placeholder="username" id="myusername" required></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Email" id="myemail" required></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Password" id="mypassword" required></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Confirm Password" id="confirmpassword" required></td>
+        </tr>
+        <tr>
+            <td><button onclick="signup()" id="aid">Sign-up</button></td>
+        </tr>
+        <tr>
+        <td><h5 style="margin-left: 150px;">-------OR--------</h5></td>
+        </tr>
+        <tr>
+           <td><span style="margin-left: 65px; font-size: large; font-family: serif;"><b>Already have a account? <a href="login2.html" style="text-decoration: none; color: rgb(155, 53, 21);">Login</a></b></span></td>
+        </tr>
+
+    </table>
+</div>
+
+<script>
+function signup(){
+            let mail=document.getElementById('myemail').value 
+            let Password=document.getElementById('mypassword').value
+            let cpassword=document.getElementById('confirmpassword').value
+            let pat1=/(\w.)(@)(\w.)(.)(\w.*)/
+            let res1=mail.match(pat1)
+            if((res1) && (Password==cpassword) && (Password)){
+                localStorage.setItem(mail,Password)
+                window.location.href="login2.html"
+            }
+            else{
+                window.alert('Given credentials is in-Valid');
+            }
+
+        }
+</script>
+</body>
+</html>

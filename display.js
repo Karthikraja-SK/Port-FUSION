@@ -1,3 +1,4 @@
+
 function color(a){
     document.getElementById("name").style.color=`${a}`
     document.getElementById("role").style.color=`${a}`
@@ -23,7 +24,7 @@ function color(a){
     
     //document.getElementById("hobby").style.color=`${a}`
 }
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
     let portfolioData = JSON.parse(localStorage.getItem('portfolioData'));
     document.getElementById('name').textContent = portfolioData.name;
     document.getElementById('email').textContent = portfolioData.email;
@@ -79,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
         li.textContent = hobby;
         hobbiesList.appendChild(li);
     });
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    window.alert("You can customize the color by using right-side color options \n And You can download the portfolio also");
 });
 function sendMail(){
             (function(){
